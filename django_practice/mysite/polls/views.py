@@ -1,8 +1,14 @@
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 
 
 def index(request):
-    return HttpResponse("Hello, world. You're at the polls index.")
+    # return HttpResponse("Hello, world. You're at the polls index.")
+    # Fully qualified URL
+    # return HttpResponseRedirect('https://www.naver.com/')
+    # Absolute path with no domain
+    # return HttpResponseRedirect('/')
+    # Relative path
+    return HttpResponseRedirect('1')
 
 
 def detail(request, question_id):
