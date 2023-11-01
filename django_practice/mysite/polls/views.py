@@ -4,7 +4,16 @@ from django.urls import reverse
 
 
 def index(request):
-    return render(request, 'polls/main.html')
+    ctx = {
+        "greetings": "Hello there!",
+        "location": {
+            "city": "Seoul",
+            "country": "South Korea",
+        },
+        "languages": ["Korean", "English"]
+    }
+    
+    return render(request, 'polls/main.html', context=ctx)
 
 
 def detail(request, question_id):

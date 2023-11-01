@@ -33,3 +33,28 @@
 1. Fully qualified URL (e.g. 'https://www.naver.com/')
 2. absolute path with no domain (e.g. '/search/')
 3. relative path (e.g. 'search/')
+
+## Template
+
+### variables
+
+- {{ <variable> }}
+
+### filters
+
+- {{ <variable>|<filter> }}
+- lower, upper
+- length
+- date: "D d M Y"
+- escape
+- https://docs.djangoproject.com/ko/4.2/ref/templates/builtins/#ref-templates-builtins-filters
+- https://www.djangotemplatetagsandfilters.com/
+
+### tags
+
+- {% <Command> %}
+- for .. in .. endfor
+- if .. elif .. else .. endif
+  - ==, !=, >=, <=, >, <
+  - and, or, in, not in, is, is not
+- block & extends
