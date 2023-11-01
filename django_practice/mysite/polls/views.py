@@ -1,18 +1,10 @@
+from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseRedirect
 from django.urls import reverse
 
 
 def index(request):
-    # return HttpResponse("Hello, world. You're at the polls index.")
-    # Fully qualified URL
-    # return HttpResponseRedirect('https://www.naver.com/')
-    # Absolute path with no domain
-    # return HttpResponseRedirect('/')
-    # Relative path
-    # return HttpResponseRedirect('1')
-    return HttpResponseRedirect(reverse('detail', args=[1]))
-    # explicit 한 방법
-    # return HttpResponseRedirect(reverse('detail', kwargs={'question_id': 1}))
+    return render(request, 'polls/main.html')
 
 
 def detail(request, question_id):
