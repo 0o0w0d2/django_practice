@@ -4,3 +4,4 @@
 __pycache__/
 mysite/settings.py
 db.sqlite3
+*/__pycache__
