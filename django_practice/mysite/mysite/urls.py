@@ -25,4 +25,8 @@ urlpatterns = [
 ]
 
 # django에서는 handler404 변수를 사용해 404 error가 발생했을 때 자동으로 function을 call 함.
+
+# 없어도 자동으로 templates에서 찾아서 동작함.
+# README의 Template - Error templates - 1 참고
 handler404 = 'mysite.views.error_404_view'
+handler500 = 'mysite.views.error_500_view'
