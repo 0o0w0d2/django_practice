@@ -2,6 +2,8 @@ from django.urls import path
 
 from . import views
 
+app_name = 'polls'
+
 urlpatterns = [
     path("", views.index, name="index"),
     # '<>' <<-- dynamic variable // 여기서는 question_id가 해당
