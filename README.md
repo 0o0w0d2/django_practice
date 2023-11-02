@@ -62,4 +62,7 @@
 ### Error Templates
 
 1. django의 경우 urls.py에 handler404, handler500 등 error function을 추가하지 않더라도(별도의 코드를 추가하지 않더라도), project의 templates 디렉토리에 있는 404.html, 500.html 등을 자동으로 사용함.
+
+- 코드를 추가하면 views.py에서 exception에 대한 정보를 얻을 수 있음
+
 2. settings.py의 `DEBUG = True`인 상태에서는 오류의 세부 정보가 표시되는데, 이는 오류를 디버그하고 해결하는데 도움이 되지만(개발 단계), 운영을 할 경우에 사용자에게 세부 정보를 노출시키지 않기 위해서 `DEBUG = False`로 변경하고, 오류 페이지를 사용자 정의해야 함.
